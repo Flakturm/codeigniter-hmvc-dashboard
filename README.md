@@ -35,6 +35,6 @@ Adminre theme & plugins
 
 Demo
 ------------------- 
-* URL: https://www.andydesign.co.nz/projects/ci-dashboard
+* URL: https://www.andydesign.co.nz/projects/ci-dashboard/admin
 * User: ***demo@demo.com***
 * Pass: ***demo***
