@@ -1,0 +1,50 @@
+/* ----------------------------
+ *
+ * Layout - Fixed sidebar
+ * @note: fixed sidebar will automatically make header fixed and only work in screen-lg and screen-md
+ * @working viewport: screen-lg, screen-md
+ *
+ * --------------------------- */
+#header.navbar {
+  position: fixed;
+  -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(0, 0, 0, 0.03);
+          box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+#header.navbar ~ #main {
+  padding-top: 100px;
+}
+/* ----------------------------
+ *
+ * Fixed sidebar - screen-sm and up
+ *
+ * --------------------------- */
+@media (min-width: 768px) {
+  #header.navbar ~ #main {
+    padding-top: 60px;
+  }
+  #header.navbar ~ .sidebar.sidebar-menu {
+    margin-top: 60px;
+  }
+  :not(.sidebar-minimized) .sidebar.sidebar-menu {
+    position: fixed;
+  }
+  :not(.sidebar-minimized) .sidebar.sidebar-menu .viewport {
+    position: absolute !important;
+  }
+  :not(.sidebar-minimized) .sidebar.sidebar-menu .content {
+    position: absolute;
+    overflow-y: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+  }
+  .sidebar-minimized .sidebar.sidebar-menu {
+    position: relative;
+  }
+  .sidebar-minimized .sidebar.sidebar-menu .viewport {
+    position: relative !important;
+  }
+  .sidebar-minimized .sidebar.sidebar-menu .content {
+    position: relative;
+    overflow-y: visible;
+  }
+}

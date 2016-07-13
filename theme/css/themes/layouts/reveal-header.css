@@ -1,0 +1,11 @@
+/* ----------------------------
+ *
+ * Layout - Reveal header
+ * @working viewport: screen-lg, screen-md, screen-sm, screen-xs
+ *
+ * --------------------------- */
+#header.navbar {
+  position: fixed;
+  -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(0, 0, 0, 0.03);
+          box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(0, 0, 0, 0.03);
+}

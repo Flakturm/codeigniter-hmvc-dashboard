@@ -1,0 +1,30 @@
+/* ----------------------------
+ *
+ * Layout - Fixed header
+ * @working viewport: screen-lg, screen-md, screen-sm, screen-xs
+ *
+ * --------------------------- */
+#header.navbar {
+  position: fixed;
+  -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(0, 0, 0, 0.03);
+          box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+#main {
+  padding-top: 100px;
+}
+/* ----------------------------
+ *
+ * Fixed header - screen-sm and up
+ *
+ * --------------------------- */
+@media (min-width: 768px) {
+  .sidebar.sidebar-menu {
+    margin-top: 60px;
+  }
+  #main {
+    padding-top: 60px;
+  }
+  .frontend #main {
+    padding-top: 90px;
+  }
+}
