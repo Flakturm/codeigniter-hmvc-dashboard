@@ -55,7 +55,7 @@
     </div>
     <!-- /.row -->
     <?php echo form_close(); ?>
-    <input type="hidden" id="ajax-url" value="/event/ajaxStep1" >
+    <input type="hidden" id="ajax-url" value="<?php echo site_url(); ?>event/ajaxStep1" >
     <!-- Bank Note Section -->
     <?php $this->load->view('front/bank_note'); ?>
     <!-- /.row -->
