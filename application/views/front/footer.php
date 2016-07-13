@@ -2,8 +2,7 @@
 <div>
     <div class="row footer-color">
         <div class="col-lg-12">
-            <p class="padding-text">版權所有，未經許可，不許轉載  © 2016 WinWin Media 定贏傳媒股份有限公司 •</p>
-            <P>主辦單位有決定取消、終止、修改或暫停上述一切活動之權利。</P>
+            <p class="padding-text"> © 2016 All rights reserved</p>
         </div>
     </div>
 
