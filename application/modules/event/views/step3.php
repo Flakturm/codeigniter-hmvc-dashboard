@@ -87,7 +87,7 @@
                     </tr>
                     <tr>
                         <td>場次時間</td>
-                        <td><strong><?php echo date('Y', strtotime($event['room_open_time'])) - 1911; ?><?php echo date('/m/d H:i', strtotime($event['room_open_time'])); ?> - <?php echo date('H:i', strtotime($event['room_close_time'])); ?></strong></td>
+                        <td><strong><?php echo date('Y/m/d H:i', strtotime($event['room_open_time'])); ?> - <?php echo date('H:i', strtotime($event['room_close_time'])); ?></strong></td>
                         <td class="text-right">報名人數</td>
                         <td><strong><?php echo $event['extra_people']; ?></strong> 人</td>
                     </tr>

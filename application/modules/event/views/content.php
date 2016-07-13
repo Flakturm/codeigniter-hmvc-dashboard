@@ -27,7 +27,7 @@
 	<?php endif; ?>
 	<div class="row">
 		<div class="col-md-6">
-			<div class="padding-text h3">時間：<span class="h3"><?php echo date('Y', strtotime($event['room_open_time'])) - 1911; ?><?php echo date('/m/d H:i', strtotime($event['room_open_time'])); ?> - <?php echo date('H:i', strtotime($event['room_close_time'])); ?></span></div>
+			<div class="padding-text h3">時間：<span class="h3"><?php echo date('Y/m/d H:i', strtotime($event['room_open_time'])); ?> - <?php echo date('H:i', strtotime($event['room_close_time'])); ?></span></div>
 			<div class="padding-text h3">報名費：<span class="h2">NT$<?php echo number_format($event['fees'], 0, '.', ','); ?> </span><span class="h3">元</span></div>
 		</div>
 		<div class="col-md-6">
